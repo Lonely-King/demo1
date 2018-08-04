@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>权重</title>
+    <style type="text/css">
+        /*权重值为1+10000*/
+        div/*权重值为1*/{
+            color: red !important/*权重值为10000*/;
+        }
+        /*权重值为100*/
+        #box/*权重值为100 */{
+            color: blue;
+        }
+        /*权重值为100+10+10+1*/
+        #body .con/*权重值为10*/  .box  P{
+            color: green;
+        }
+        /*权重值为1+10*/
+        body .con{
+            color: greenyellow;
+        }
+    </style>
+
+</head>
+<body>
+        <!--行间样式 style=""权重值为1000-->
+    <div id="box">这是一个div元素</div>
+
+</body>
+</html>

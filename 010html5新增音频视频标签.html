@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 音频和视频</title>
+</head>
+<body>
+    <!-
+    1、autoplay 自动播放
+    2、controls 显示播放器
+    3、loop 循环播放
+    4、preload 预加载
+    5、muted 静音
+    --->
+    <audio src="source/audio.mp3" controls autoplay loop preload muted></audio>
+
+
+    <!--source标签的作用是提供多个媒体文件地址，如果一个地址的文件不兼容，就使用下一个地址。-->
+    <audio  autoplay controls loop preload>
+        <source src="source/audio.mp3" type="">
+        <source src="source/audio02.wav" type="">
+    </audio>
+     <!--
+     可添加属性：
+    1、width
+    2、height
+    3、Poster
+    -->
+    <video src="source/mov.mp4"  controls autoplay loop preload muted width="400px" height="300px"></video>
+
+
+</body>
+</html>

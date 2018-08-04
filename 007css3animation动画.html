@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation动画</title>
+    <style type="text/css">
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            /*动画名称*/
+            /*animation:name duration timing-function delay iteration-count direction;同时设置多个属性
+                   动画:名称  时间     动画曲线  动画延迟时间  播放次数      动画方向      */
+            animation: moving 1s ease 1s 5 alternate;
+            animation-play-state: paused; /*动画状态:停止*/
+        }
+        .box:hover  {
+                animation-play-state: running; /*当鼠标放上去的时候运动*/
+            }
+        @keyframes /*定义关键帧动画*/
+        moving {
+            from{
+                width:100px;
+            }
+            to{
+                width: 500px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

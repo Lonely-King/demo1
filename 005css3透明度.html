@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>透明度</title>
+    <style type="text/css">
+        .box{/*用 opacity：0.3和 filter:alpha(opacity30)只能设置总体的透明度，不能单独设置某一元素*/
+            width: 200px;
+            height: 200px;
+            /*background: url(images/banner05.jpg);*/
+            background-color: chartreuse;
+            margin: 50px auto 0;
+            border: 2px solid #000;
+            border-radius: 50%;
+            /*针对标准浏览器（不兼容IE）*/
+            opacity: 0.3;
+            /*针对非标准浏览器（兼容IE）*/
+            filter:alpha(opacity30);
+            text-align: center;
+            line-height: 200px;
+        }
+        .box2{/*用rgba可以设置某个用到颜色的元素的透明度*/
+            width: 200px;
+            height: 200px;
+            margin: 50px auto 0;
+            border: 2px solid rgba(0,0,0,0.3);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 200px;
+            background-color: rgba(255,215,0,0.3);/*rgba(0,0,0,0.1) 前三个数值表示颜色，第四个数值表示颜色的透明度*/
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">床前明月光</div>
+<div class="box2">床前明月光</div>
+</html>

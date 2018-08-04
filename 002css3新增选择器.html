@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3新增选择器</title>
+    <style type="text/css">
+        li{
+            background-color: gold;
+            margin-bottom: 10px;
+        }
+
+        li:nth-child(1)/*直接指定某个li或div,子元素的类型要一致，按顺序匹配*/{
+            background-color:#FFF;
+        }
+        li:nth-child(2n+1)/*可以用函数隔行操作（比如换色*/{
+            background-color: green;
+        }
+        /*
+        li:nth-of-type(n)直接指定某个li或div,子元素的类型可以不一致，按顺序匹配
+        li:nth-last-child(n)直接指定某个li或div,子元素的类型要一致，倒序匹配，nth-last-child(1)等于最后一个
+        li:nth-last-of-type(n)直接指定某个li或div,子元素的类型可以不一致，按倒序匹配，nth-last-of-type(1）等于最后一个
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+
+</body>
+</html>
