@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>@keyframe规则和animation动画的练习</title>
+
+    <style type="text/css">
+
+        html,body
+        {
+            margin: 0;
+            padding: 0;
+        }
+
+        .demo
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background: black;
+            height: 670px;
+        }
+
+        .demo0
+        {
+            margin-top: 40%;
+            border-radius: 25px;
+            width: 50px;
+            height: 50px;
+            position: relative;
+        }
+
+        .demo1
+        {
+            animation: mymove 4s linear infinite;
+        }
+
+        .demo2
+        {
+            animation: mymove 4s ease-in-out 2s infinite;
+        }
+
+        .demo3
+        {
+            animation: mymove 4s ease-in infinite;
+        }
+
+        .demo4
+        {
+            animation: mymove 4s ease-out 1s infinite;
+        }
+
+        .demo5
+        {
+            animation: mymove 5s step-start infinite;
+        }
+
+        .demo6
+        {
+            animation: mymove 4s ease 2s infinite;
+        }
+
+        .demo7
+        {
+            animation: mymove 4s linear infinite;
+        }
+
+        .demo8
+        {
+            animation: mymove 4s ease-in-out 1s infinite;
+        }
+
+        .demo9
+        {
+            animation: mymove 4s ease-in infinite;
+        }
+
+        .demo10
+        {
+            animation: mymove 4s ease-out 1s infinite;
+        }
+
+        .demo11
+        {
+            animation: mymove 5s step-start infinite;
+        }
+
+        .demo12
+        {
+            animation: mymove 4s ease 2s infinite;
+        }
+
+        @keyframes mymove
+        {
+            0%   {top:-100px;background:red;}
+            25%  {top:-200px; background:blue;}
+            50%  {top:-300px; background:yellow;}
+            75%  {top:-400px; background:green;}
+            100% {top:-500px; background:red;}
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="demo">
+    <div class="demo0 demo1"></div>
+    <div class="demo0 demo2"></div>
+    <div class="demo0 demo3"></div>
+    <div class="demo0 demo4"></div>
+    <div class="demo0 demo5"></div>
+    <div class="demo0 demo6"></div>
+    <div class="demo0 demo7"></div>
+    <div class="demo0 demo8"></div>
+    <div class="demo0 demo9"></div>
+    <div class="demo0 demo10"></div>
+    <div class="demo0 demo11"></div>
+    <div class="demo0 demo12"></div>
+</div>
+
+</body>
+</html>
